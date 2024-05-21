@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from utils import *
 
-dataset_path = "./../PlantVillage/"
+dataset_path = "../PlantVillage/"
 data = []
 labels = []
 specie = []
