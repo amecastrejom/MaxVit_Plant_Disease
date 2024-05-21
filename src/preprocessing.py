@@ -27,7 +27,7 @@ for class_name in os.listdir(dataset_path):
 df = pd.DataFrame({'data': data, 'label': labels,'specie':specie,'disease':disease})
 
 # Create datasets
-train_df, val_df,test_df = create_train_validation_split(df, 0.3, "data", 142)
+train_df, val_df,test_df = create_train_validation_split(df, 0.4, "data", 142)
 
 for th in [-1,178,174,89,44]:
     val_images, val_labels = transform_dataset(val_df,th)
